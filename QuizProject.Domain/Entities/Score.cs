@@ -11,7 +11,7 @@ namespace QuizProject.Domain
     {
         [Key]public string Idscore { get; set; }
         public int ScoreResult { get; set; }
-        public List<Score> Scorelist { get; set; }
+
 
         public virtual EndUser EndUser { get; set; }
         public virtual Quiz Quiz { get; set; }

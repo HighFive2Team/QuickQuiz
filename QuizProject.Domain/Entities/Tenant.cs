@@ -13,18 +13,20 @@ namespace QuizProject.Domain
        
         [Key] public string IdTenant { get; set; }
         
-       public string Country { get; set; }
+        public string Country { get; set; }
         public int PostalCode { get; set; }
         public int PhoneNumber { get; set; }
+        public string OffreType { get; set; }
+
         public string Logo { get; set; }
         public string Slogan { get; set; }
-        public string OffreType { get; set; }
         public List<User> UserList { get; set; } 
 
        //navigation Proprietes
   
        public virtual ICollection<User> Users { get; set; }
-      // public virtual ICollection<QuizManager> QuizManagers { get; set; }
+
+       // public virtual ICollection<QuizManager> QuizManagers { get; set; }
 
     }
 }

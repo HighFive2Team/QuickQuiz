@@ -40,17 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin.cs" />
-    <Compile Include="Poll.cs" />
+    <Compile Include="Entities\Admin.cs" />
+    <Compile Include="Entities\Poll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Question.cs" />
-    <Compile Include="Quiz.cs" />
-    <Compile Include="QuizManager.cs" />
-    <Compile Include="EndUser.cs" />
-    <Compile Include="Answer.cs" />
-    <Compile Include="Score.cs" />
-    <Compile Include="Tenant.cs" />
-    <Compile Include="User.cs" />
+    <Compile Include="Entities\Question.cs" />
+    <Compile Include="Entities\Quiz.cs" />
+    <Compile Include="Entities\QuizManager.cs" />
+    <Compile Include="Entities\EndUser.cs" />
+    <Compile Include="Entities\Answer.cs" />
+    <Compile Include="Entities\Score.cs" />
+    <Compile Include="Entities\Tenant.cs" />
+    <Compile Include="Entities\User.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

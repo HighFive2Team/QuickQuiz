@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\EntityTypeConfiguration.cs" />
     <Compile Include="Configuration\PollConfiguration.cs" />
     <Compile Include="Configuration\QuestionConfiguration.cs" />
     <Compile Include="Configuration\QuizConfiguration.cs" />
