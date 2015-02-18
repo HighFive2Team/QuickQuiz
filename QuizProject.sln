@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizProject.Domain", "QuizProject.Domain\QuizProject.Domain.csproj", "{53227142-EAD9-455B-AA5A-A7BB7D1FD13D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizProject.data", "QuizProject.data\QuizProject.data.csproj", "{5FBB7567-8BE0-4E88-B675-C57465D47906}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53227142-EAD9-455B-AA5A-A7BB7D1FD13D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53227142-EAD9-455B-AA5A-A7BB7D1FD13D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53227142-EAD9-455B-AA5A-A7BB7D1FD13D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53227142-EAD9-455B-AA5A-A7BB7D1FD13D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FBB7567-8BE0-4E88-B675-C57465D47906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FBB7567-8BE0-4E88-B675-C57465D47906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FBB7567-8BE0-4E88-B675-C57465D47906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FBB7567-8BE0-4E88-B675-C57465D47906}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

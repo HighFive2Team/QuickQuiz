@@ -1,0 +1,69 @@
+﻿@model IEnumerable<QuizProject.Domain.Quiz>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SuizType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Size)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StartQuiz)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FinishQuiz)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Time)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QuizManagerID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SuizType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Size)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StartQuiz)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FinishQuiz)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Time)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QuizManagerID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdQuiz }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdQuiz }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdQuiz })
+        </td>
+    </tr>
+}
+
+</table>
