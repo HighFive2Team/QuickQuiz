@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5FBB7567-8BE0-4E88-B675-C57465D47906}</ProjectGuid>
+    <ProjectGuid>{143DC771-D61D-4745-A97A-A164AE6B427E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>QuizProject.data</RootNamespace>
-    <AssemblyName>QuizProject.data</AssemblyName>
+    <RootNamespace>QuickQuiz.Service</RootNamespace>
+    <AssemblyName>QuickQuiz.Service</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,14 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,29 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Configuration\PollConfiguration.cs" />
-    <Compile Include="Configuration\QuestionConfiguration.cs" />
-    <Compile Include="Configuration\QuizConfiguration.cs" />
-    <Compile Include="Configuration\AnswerConfiguration.cs" />
-    <Compile Include="Configuration\ScoreConfiguration.cs" />
-    <Compile Include="Configuration\TenantConfiguration.cs" />
-    <Compile Include="Infrastructure\QuizContext.cs" />
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Configuration\UserConfiguration.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\QuizProject.Domain\QuizProject.Domain.csproj">
-      <Project>{53227142-ead9-455b-aa5a-a7bb7d1fd13d}</Project>
-      <Name>QuizProject.Domain</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

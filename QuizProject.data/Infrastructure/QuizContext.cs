@@ -11,7 +11,7 @@ namespace QuizProject.data.Infrastructure
 {
    public class QuizContext:DbContext
     {
-       public QuizContext():base("Name=QuizProject")
+       public QuizContext():base("Name=DefaultConnection")
        {
 
        }
