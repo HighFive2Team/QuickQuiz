@@ -14,6 +14,7 @@ namespace QuizProject.data.Migrations
 
         protected override void Seed(QuizProject.data.Infrastructure.QuizContext context)
         {
+
        
             //  This method will be called after migrating to the latest version.
 
