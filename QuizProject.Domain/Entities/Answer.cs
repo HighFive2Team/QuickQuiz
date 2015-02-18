@@ -10,13 +10,13 @@ namespace QuizProject.Domain
     public partial class Answer
     {
         [Key]public string IdAnswer { get; set; }
-        public string AnswerName { get; set; }
+        public string AnswerText { get; set; }
         public bool EtatResponse { get; set; }
-        public int nbClick { get; set; }//pour les click des reponse 
+        public int nbClicks { get; set; } // nombre des selections par les participants 
 
         public virtual Question Question { get; set; }
 
-         public string QuestionId { get; set; }
+        public string QuestionId { get; set; }
         
     }
 }
