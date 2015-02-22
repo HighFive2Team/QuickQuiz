@@ -18,8 +18,8 @@ namespace QuickQuiz.Data.Infrastructure
 
        public DbSet<User> Users { get; set; }
        public DbSet<Tenant> Tenants { get; set; }
-       public DbSet<Quiz> Quizs { get; set; }
-       public DbSet<Answer> Responses { get; set; }
+       public DbSet<Quiz> Quizzes { get; set; }
+       public DbSet<Answer> Answers { get; set; }
        public DbSet<Score> Scores { get; set; }
        public DbSet<Question> Questions { get; set; }
        public DbSet<Poll> Polls { get; set; }
@@ -33,6 +33,8 @@ namespace QuickQuiz.Data.Infrastructure
            modelBuilder.Configurations.Add(new ScoreConfiguration());
            modelBuilder.Configurations.Add(new TenantConfiguration());
            modelBuilder.Configurations.Add(new UserConfiguration());
+           modelBuilder.Configurations.Add(new EndUserConfiguration());
+           modelBuilder.Configurations.Add(new QuizManagerConfiguration());
            
        }
     }

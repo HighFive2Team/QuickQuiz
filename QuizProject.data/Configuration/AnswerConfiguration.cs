@@ -12,7 +12,7 @@ namespace QuickQuiz.Data.Configuration
     {
         public AnswerConfiguration()
         {
-            ToTable("Response");
+            ToTable("Answers");
             HasKey(r => r.AnswerId);
             HasRequired(qu => qu.Question).WithMany(A =>A.Answers).HasForeignKey(A=>A.QuestionId).WillCascadeOnDelete(false);
 
