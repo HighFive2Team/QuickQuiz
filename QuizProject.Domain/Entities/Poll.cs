@@ -7,20 +7,20 @@ using System.Threading.Tasks;
 
 namespace QuizProject.Domain
 {
-   public partial class Poll
+   public  class Poll
     {
-       [Key]public string IdPoll { get; set; }
-       public int Size { get; set; }
-       public int nbparticipant { get; set; }
+       [Key]public string PolliId { get; set; }
+       public int QuestionsNumber { get; set; }
+       public int NbOfParticipants { get; set; }
       
        public DateTime Startpoll { get; set; }
        public DateTime Finishpoll { get; set; }
-       public List<Question> QuestionPollList { get; set; }
+       public string QuizManagerId { get; set; }
        public virtual QuizManager QuizManager { get; set; }
+
        public virtual ICollection<EndUser> EndUsers { get; set; }
        public virtual ICollection<Question> Questions { get; set; }
 
-       public string QuizManagerId { get; set; }
        
 
        

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace QuizProject.Domain
 {
-   public partial class EndUser:User
+   public  class EndUser:User
     {
        public virtual ICollection<Quiz> Quizs {get; set;}
        public virtual ICollection<Poll> Polls { get; set; }
-       public virtual ICollection<Score> Score { get; set; }
+       public virtual ICollection<Score> Scores { get; set; }
        
       
 

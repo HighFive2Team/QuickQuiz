@@ -7,16 +7,17 @@ using System.Threading.Tasks;
 
 namespace QuizProject.Domain
 {
-    public partial class Answer
+    public  class Answer
     {
-        [Key]public string IdAnswer { get; set; }
+        [Key]public string AnswerId { get; set; }
         public string AnswerText { get; set; }
         public bool EtatResponse { get; set; }
         public int nbClicks { get; set; } // nombre des selections par les participants 
-
-        public virtual Question Question { get; set; }
+        public String Image { get; set; }
 
         public string QuestionId { get; set; }
+        public virtual Question Question { get; set; }
+
         
     }
 }

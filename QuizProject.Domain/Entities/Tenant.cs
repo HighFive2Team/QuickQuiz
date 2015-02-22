@@ -7,24 +7,25 @@ using System.Threading.Tasks;
 
 namespace QuizProject.Domain
 {
-   public partial class Tenant:User
+   public  class Tenant:User
     {
 
        
-        [Key] public string IdTenant { get; set; }
+        [Key] public string TenantId { get; set; }
         
         public string Country { get; set; }
-        public int PostalCode { get; set; }
+        public int ZipCode { get; set; }
         public int PhoneNumber { get; set; }
-        public string OffreType { get; set; }
+        public string OfferType { get; set; }
 
         public string Logo { get; set; }
         public string Slogan { get; set; }
-        public List<User> UserList { get; set; } 
 
        //navigation Proprietes
   
-       public virtual ICollection<User> Users { get; set; }
+       public virtual ICollection<EndUser> EndUsers { get; set; }
+       public virtual ICollection<QuizManager> QuizManagers { get; set; }
+
 
        // public virtual ICollection<QuizManager> QuizManagers { get; set; }
 

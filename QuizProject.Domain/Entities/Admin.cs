@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuizProject.Domain
 {
-    public partial class Admin:User
+    public  class Admin:User
     {
 
 

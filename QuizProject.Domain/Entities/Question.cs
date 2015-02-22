@@ -7,14 +7,13 @@ using System.Threading.Tasks;
 
 namespace QuizProject.Domain
 {
-   public partial class Question
+   public  class Question
     {
-       [Key]public string Idquestion { get; set; }
-       public string QuestionName { get; set; }
-       private List<Answer> AnswerList { get; set; }
-       public string Questiontype{get;set;}//pour savoir est ce que le question pour le quiz ou Poll
+       [Key]public string questionId { get; set; }
+       public string QuestionText{ get; set; }
+       public string Questiontype{get;set;}
        public string Video { get; set; }
-       public string Shart { get; set; }
+       public string Image { get; set; }
 
 
        public virtual ICollection<Answer> Answers { get; set; }

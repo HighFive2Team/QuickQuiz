@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace QuizProject.Domain
 {
-    public partial class Score
+    public  class Score
     {
-        [Key]public string Idscore { get; set; }
+        [Key]
+        public string Idscore { get; set; }
         public int ScoreResult { get; set; }
 
 
