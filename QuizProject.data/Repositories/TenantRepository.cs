@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace QuickQuiz.Data.Repositories
 {
-    public class TenantRepositry : RepositoryBase<Score>, ITenantRepository
+    public class TenantRepositry : RepositoryBase<Tenant>, ITenantRepository
     {
         public TenantRepositry(IDatabaseFactory dbFactory) : base(dbFactory) { }
     }

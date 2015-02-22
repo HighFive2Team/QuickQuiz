@@ -13,7 +13,7 @@ namespace QuickQuiz.Data.Configuration
         public AnswerConfiguration()
         {
             ToTable("Response");
-            HasKey(r => r.IdAnswer);
+            HasKey(r => r.AnswerId);
             HasRequired(qu => qu.Question).WithMany(A =>A.Answers).HasForeignKey(A=>A.QuestionId).WillCascadeOnDelete(false);
 
             //tous les champs monquent les proprietés sur les attribut dans la base de donnée

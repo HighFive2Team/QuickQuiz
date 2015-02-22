@@ -11,7 +11,6 @@ namespace QuickQuiz.Domain
     {
 
        
-        [Key] public string TenantId { get; set; }
         
         public string Country { get; set; }
         public int ZipCode { get; set; }
@@ -25,9 +24,6 @@ namespace QuickQuiz.Domain
   
        public virtual ICollection<EndUser> EndUsers { get; set; }
        public virtual ICollection<QuizManager> QuizManagers { get; set; }
-
-
-       // public virtual ICollection<QuizManager> QuizManagers { get; set; }
 
     }
 }

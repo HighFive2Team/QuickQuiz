@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace QuickQuiz.Data.Infrastructure
 {
-   public class UnitOfWork:IUnitOfWork
+   public class UnitOfWork: IUnitOfWork
     {
        private QuizContext dataContext;
        IDatabaseFactory dbFactory;
@@ -71,5 +71,22 @@ namespace QuickQuiz.Data.Infrastructure
        {
            get { return userRepository = new UserRepositry(dbFactory); }
        }
+
+       protected QuizContext DataContext
+       {
+           get
+           {
+               return dataContext = dbFactory.DataContext;
+           }
+       }
+       public void Commit()
+       {
+           DataContext.SaveChanges();
+       }
+       public void Dispose()
+       {
+           dbFactory.Dispose();
+       }
+
     }
 }

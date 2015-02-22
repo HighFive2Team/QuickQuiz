@@ -12,7 +12,10 @@ namespace QuickQuiz.Domain
 
         public virtual ICollection<Quiz> Quizzes { get; set; }
         public virtual ICollection<Poll> Polls { get; set; }
-       
-      
+
+
+        //foreignkey
+        public string TenantId { get; set; }
+        public virtual Tenant Tenant { get; set; } 
     }
 }

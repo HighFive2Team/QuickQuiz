@@ -16,14 +16,10 @@ namespace QuickQuiz.Data
            ToTable("Users");
            HasKey(u => u.IdUser); 
            
-        
-
           Map<EndUser>(p =>
-          {
-              
+          {             
               p.Requires("isUser").HasValue(0);
-
-          });
+            });
           Map<QuizManager>(p =>
           {
               p.Requires("isUser").HasValue(1);
@@ -36,7 +32,6 @@ namespace QuickQuiz.Data
           });
           
 
-           //tous les champs monquent les proprietés sur les attribut dans la base de donnée
            
        }
 

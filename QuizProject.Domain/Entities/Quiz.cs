@@ -20,7 +20,6 @@ namespace QuickQuiz.Domain
         public string QuizManagerId { get; set; }
 
         public virtual QuizManager QuizManager { get; set; }
-        public virtual ICollection<EndUser> EndUsers { get; set; }
         public virtual ICollection<Question> Questions { get; set; }
         public virtual ICollection<Score> Scores { get; set; }
 

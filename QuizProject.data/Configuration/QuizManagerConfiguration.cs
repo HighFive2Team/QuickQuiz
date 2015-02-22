@@ -8,14 +8,11 @@ using System.Threading.Tasks;
 
 namespace QuickQuiz.Data.Configuration
 {
-    class TenantConfiguration:EntityTypeConfiguration<Tenant>
+    class QuizManagerConfiguration : EntityTypeConfiguration<QuizManager>
     {
-        public TenantConfiguration()
+        public QuizManagerConfiguration()
         {
-            ToTable("Tenants");
-          
-    
-            //tous les champs manquent les proprietés sur les attribut dans la base de donnée 
+            HasRequired(t => t.Tenant).WithMany(m => m.QuizManagers).HasForeignKey(t => t.TenantId).WillCascadeOnDelete(false);
 
         }
     }

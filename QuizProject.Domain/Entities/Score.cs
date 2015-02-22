@@ -10,8 +10,7 @@ namespace QuickQuiz.Domain
     public  class Score
     {
         [Key]
-        public string Idscore { get; set; }
-        public int ScoreResult { get; set; }
+        public string ScoreId { get; set; }
 
 
         public virtual EndUser EndUser { get; set; }
@@ -19,6 +18,8 @@ namespace QuickQuiz.Domain
 
         public string EndUserId { get; set; }
         public string QuizId { get; set; }
+
+        public int ScoreResult { get; set; }
 
       
 

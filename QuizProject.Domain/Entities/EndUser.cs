@@ -8,11 +8,13 @@ namespace QuickQuiz.Domain
 {
    public  class EndUser:User
     {
-       public virtual ICollection<Quiz> Quizs {get; set;}
        public virtual ICollection<Poll> Polls { get; set; }
        public virtual ICollection<Score> Scores { get; set; }
-       
-      
+
+
+       //foreignkey
+       public string TenantId { get; set; }
+       public virtual Tenant Tenant { get; set; } 
 
     }
 }

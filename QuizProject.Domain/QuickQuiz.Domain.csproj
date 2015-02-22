@@ -53,7 +53,7 @@
     <Compile Include="Entities\Quiz.cs" />
     <Compile Include="Entities\QuizManager.cs" />
     <Compile Include="Entities\EndUser.cs" />
-    <Compile Include="Answer.cs" />
+    <Compile Include="Entities\Answer.cs" />
     <Compile Include="Entities\Score.cs" />
     <Compile Include="Entities\Tenant.cs" />
     <Compile Include="Entities\User.cs" />
