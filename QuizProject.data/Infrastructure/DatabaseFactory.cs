@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuizProject.data.Infrastructure
+namespace QuickQuiz.Data.Infrastructure
 {
    public class DatabaseFactory:Disposable,IDatabaseFactory
     {

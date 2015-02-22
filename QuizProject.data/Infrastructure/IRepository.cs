@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuizProject.data.Infrastructure
+namespace QuickQuiz.Data.Infrastructure
 {
    public interface IRepository<T> where T:class
     {

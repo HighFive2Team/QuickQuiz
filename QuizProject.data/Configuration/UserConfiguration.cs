@@ -1,4 +1,4 @@
-﻿using QuizProject.Domain;
+﻿using QuickQuiz.Domain;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuizProject.data
+namespace QuickQuiz.Data
 {
    public class UserConfiguration:EntityTypeConfiguration<User>
     {
@@ -16,7 +16,7 @@ namespace QuizProject.data
            ToTable("Users");
            HasKey(u => u.IdUser); 
            
-          HasRequired(t => t.tenant).WithMany(u =>u.Users).HasForeignKey(t =>t.TenantId).WillCascadeOnDelete(false);
+        
 
           Map<EndUser>(p =>
           {

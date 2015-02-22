@@ -1,4 +1,4 @@
-﻿using QuizProject.Domain;
+﻿using QuickQuiz.Domain;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuizProject.data.Configuration
+namespace QuickQuiz.Data.Configuration
 {
     public class PollConfiguration:EntityTypeConfiguration<Poll>
     {

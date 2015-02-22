@@ -1,11 +1,11 @@
-﻿using QuizProject.data.Repositories;
+﻿using QuickQuiz.Data.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuizProject.data.Infrastructure
+namespace QuickQuiz.Data.Infrastructure
 {
    public interface IUnitOfWork:IDisposable
     {

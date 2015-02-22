@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuizProject.data.Infrastructure
+namespace QuickQuiz.Data.Infrastructure
 {
    public abstract class RepositoryBase<T>:IRepository<T>where T:class
     {

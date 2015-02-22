@@ -1,11 +1,11 @@
-﻿using QuizProject.data.Repositories;
+﻿using QuickQuiz.Data.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuizProject.data.Infrastructure
+namespace QuickQuiz.Data.Infrastructure
 {
    public class UnitOfWork:IUnitOfWork
     {
@@ -50,7 +50,7 @@ namespace QuizProject.data.Infrastructure
        }
 
        private IQuizRepository quizRepository;
-       public IQuizRepository AdminRepository
+       public IQuizRepository QuizRepository
        {
            get { return quizRepository = new QuizRepositry(dbFactory); }
        }

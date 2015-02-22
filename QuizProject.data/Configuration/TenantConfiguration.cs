@@ -1,4 +1,4 @@
-﻿using QuizProject.Domain;
+﻿using QuickQuiz.Domain;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;
@@ -6,16 +6,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuizProject.data.Configuration
+namespace QuickQuiz.Data.Configuration
 {
     class TenantConfiguration:EntityTypeConfiguration<Tenant>
     {
         public TenantConfiguration()
         {
             ToTable("Tenants");
-            HasKey(t => t.IdTenant); 
+            HasKey(t => t.TenantId); 
     
-            //tous les champs monquent les proprietés sur les attribut dans la base de donnée 
+            //tous les champs manquent les proprietés sur les attribut dans la base de donnée 
 
         }
     }

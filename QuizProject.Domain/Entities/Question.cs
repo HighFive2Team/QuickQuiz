@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuizProject.Domain
+namespace QuickQuiz.Domain
 {
    public  class Question
     {

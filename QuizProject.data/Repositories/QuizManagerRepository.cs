@@ -1,12 +1,12 @@
-﻿using QuizProject.data.Infrastructure;
-using QuizProject.Domain;
+﻿using QuickQuiz.Data.Infrastructure;
+using QuickQuiz.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuizProject.data.Repositories
+namespace QuickQuiz.Data.Repositories
 {
     public class QuizManagerRepositry : RepositoryBase<QuizManager>, IQuizManagerRepository
     {

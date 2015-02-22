@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizProject.Domain", "QuizProject.Domain\QuizProject.Domain.csproj", "{53227142-EAD9-455B-AA5A-A7BB7D1FD13D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickQuiz.Domain", "QuizProject.Domain\QuickQuiz.Domain.csproj", "{53227142-EAD9-455B-AA5A-A7BB7D1FD13D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizProject.data", "QuizProject.data\QuizProject.data.csproj", "{5FBB7567-8BE0-4E88-B675-C57465D47906}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickQuiz.Data", "QuizProject.data\QuickQuiz.Data.csproj", "{5FBB7567-8BE0-4E88-B675-C57465D47906}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickQuiz.Service", "QuickQuiz.Service\QuickQuiz.Service.csproj", "{143DC771-D61D-4745-A97A-A164AE6B427E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuiqQuiz", "QuiqQuiz\QuiqQuiz.csproj", "{559265F1-0861-41E4-90BE-72B080A59D5F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickQuiz.WebAPI", "QuiqQuiz\QuickQuiz.WebAPI.csproj", "{559265F1-0861-41E4-90BE-72B080A59D5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

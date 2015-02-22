@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuizProject.Domain
+namespace QuickQuiz.Domain
 {
     public  class Quiz
     {
@@ -22,7 +22,7 @@ namespace QuizProject.Domain
         public virtual QuizManager QuizManager { get; set; }
         public virtual ICollection<EndUser> EndUsers { get; set; }
         public virtual ICollection<Question> Questions { get; set; }
-        public virtual ICollection<Score> Score { get; set; }
+        public virtual ICollection<Score> Scores { get; set; }
 
         
 

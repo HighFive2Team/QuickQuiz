@@ -1,18 +1,18 @@
-namespace QuizProject.data.Migrations
+namespace QuickQuiz.Data.Migrations
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<QuizProject.data.Infrastructure.QuizContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<QuickQuiz.Data.Infrastructure.QuizContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(QuizProject.data.Infrastructure.QuizContext context)
+        protected override void Seed(QuickQuiz.Data.Infrastructure.QuizContext context)
         {
 
        

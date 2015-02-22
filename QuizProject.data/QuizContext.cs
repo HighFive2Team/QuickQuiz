@@ -1,5 +1,5 @@
-﻿using QuizProject.data.Configuration;
-using QuizProject.Domain;
+﻿using QuickQuiz.Data.Configuration;
+using QuickQuiz.Domain;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuizProject.data.Infrastructure
+namespace QuickQuiz.Data.Infrastructure
 {
    public class QuizContext:DbContext
     {
@@ -16,13 +16,13 @@ namespace QuizProject.data.Infrastructure
 
        }
 
-       public DbSet<User> User { get; set; }
-       public DbSet<Tenant> Tenant { get; set; }
-       public DbSet<Quiz> Quiz { get; set; }
-       public DbSet<Answer> Response { get; set; }
-       public DbSet<Score> Score { get; set; }
-       public DbSet<Question> Question { get; set; }
-       public DbSet<Poll> Poll { get; set; }
+       public DbSet<User> Users { get; set; }
+       public DbSet<Tenant> Tenants { get; set; }
+       public DbSet<Quiz> Quizs { get; set; }
+       public DbSet<Answer> Responses { get; set; }
+       public DbSet<Score> Scores { get; set; }
+       public DbSet<Question> Questions { get; set; }
+       public DbSet<Poll> Polls { get; set; }
        
        protected override void OnModelCreating(DbModelBuilder modelBuilder)
        {

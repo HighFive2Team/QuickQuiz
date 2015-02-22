@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuizProject.Domain
+namespace QuickQuiz.Domain
 {
    public  class Poll
     {
-       [Key]public string PolliId { get; set; }
+       [Key]public string PollId { get; set; }
        public int QuestionsNumber { get; set; }
        public int NbOfParticipants { get; set; }
       
