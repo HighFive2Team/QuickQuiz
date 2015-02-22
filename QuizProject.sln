@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizProject.data", "QuizPro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickQuiz.Service", "QuickQuiz.Service\QuickQuiz.Service.csproj", "{143DC771-D61D-4745-A97A-A164AE6B427E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickQuiz.Web", "QuickQuiz.Web\QuickQuiz.Web.csproj", "{C9CF05E0-59B6-4660-8F77-7B02FADCACBF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuiqQuiz", "QuiqQuiz\QuiqQuiz.csproj", "{559265F1-0861-41E4-90BE-72B080A59D5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{143DC771-D61D-4745-A97A-A164AE6B427E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{143DC771-D61D-4745-A97A-A164AE6B427E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{143DC771-D61D-4745-A97A-A164AE6B427E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C9CF05E0-59B6-4660-8F77-7B02FADCACBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C9CF05E0-59B6-4660-8F77-7B02FADCACBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C9CF05E0-59B6-4660-8F77-7B02FADCACBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C9CF05E0-59B6-4660-8F77-7B02FADCACBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{559265F1-0861-41E4-90BE-72B080A59D5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{559265F1-0861-41E4-90BE-72B080A59D5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{559265F1-0861-41E4-90BE-72B080A59D5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{559265F1-0861-41E4-90BE-72B080A59D5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
