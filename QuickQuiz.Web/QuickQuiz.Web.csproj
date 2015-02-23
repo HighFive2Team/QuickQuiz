@@ -208,10 +208,6 @@
       <Project>{143dc771-d61d-4745-a97a-a164ae6b427e}</Project>
       <Name>QuickQuiz.Service</Name>
     </ProjectReference>
-    <ProjectReference Include="..\QuickQuiz.WebAPI\QuickQuiz.WebAPI2.csproj">
-      <Project>{608a6501-9896-473d-bec7-e380de3d5e14}</Project>
-      <Name>QuickQuiz.WebAPI2</Name>
-    </ProjectReference>
     <ProjectReference Include="..\QuizProject.data\QuickQuiz.Data.csproj">
       <Project>{5fbb7567-8be0-4e88-b675-c57465d47906}</Project>
       <Name>QuickQuiz.Data</Name>

@@ -61,6 +61,14 @@
     <Compile Include="Infrastructure\IRepository.cs" />
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
+    <Compile Include="Migrations\201502231847341_migration1.cs" />
+    <Compile Include="Migrations\201502231847341_migration1.Designer.cs">
+      <DependentUpon>201502231847341_migration1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502231909586_mig2.cs" />
+    <Compile Include="Migrations\201502231909586_mig2.Designer.cs">
+      <DependentUpon>201502231909586_mig2.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuizContext.cs" />
     <Compile Include="Infrastructure\RepositoryBase.cs" />
     <Compile Include="Migrations\Configuration.cs" />
@@ -89,6 +97,14 @@
       <Project>{53227142-ead9-455b-aa5a-a7bb7d1fd13d}</Project>
       <Name>QuickQuiz.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201502231847341_migration1.resx">
+      <DependentUpon>201502231847341_migration1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502231909586_mig2.resx">
+      <DependentUpon>201502231909586_mig2.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

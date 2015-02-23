@@ -9,9 +9,10 @@ using System.Threading.Tasks;
 
 namespace QuickQuiz.Data.Infrastructure
 {
-   public class QuizContext:DbContext
+   public class QuizContext: DbContext  
     {
-       public QuizContext():base("Name=DefaultConnection")
+       public QuizContext()
+           : base("Name=QuickQuiz_db")
        {
 
        }

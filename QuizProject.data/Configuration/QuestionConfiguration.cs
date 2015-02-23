@@ -12,13 +12,13 @@ namespace QuickQuiz.Data.Configuration
     {
         public QuestionConfiguration()
         {
-            ToTable("Question");
+            ToTable("Questions");
             HasKey(q => q.questionId);
             HasMany(q => q.Quizs).WithMany(qu => qu.Questions).Map(m =>
             {
                 m.ToTable("QuestionQuiz");
-                m.MapLeftKey("Quiz");
                 m.MapRightKey("Question");
+                m.MapLeftKey("Quiz");
             });
 
             HasMany(q => q.Polls).WithMany(qu => qu.Questions).Map(m =>

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace QuickQuiz.Data.Configuration
 {
-    public class PollConfiguration:EntityTypeConfiguration<Poll>
+    public class PollConfiguration: EntityTypeConfiguration<Poll>
     {
         public PollConfiguration()
         {
