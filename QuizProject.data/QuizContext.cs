@@ -38,5 +38,10 @@ namespace QuickQuiz.Data.Infrastructure
            modelBuilder.Configurations.Add(new QuizManagerConfiguration());
            
        }
+
+       internal void SaveChanges()
+       {
+           throw new NotImplementedException();
+       }
     }
 }

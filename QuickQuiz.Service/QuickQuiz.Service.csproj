@@ -39,7 +39,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrudServices\CrudAnswer.cs" />
+    <Compile Include="CrudServices\CrudEndUser.cs" />
+    <Compile Include="CrudServices\CrudPoll.cs" />
+    <Compile Include="CrudServices\CrudQuestion.cs" />
+    <Compile Include="CrudServices\CrudQuiz.cs" />
+    <Compile Include="CrudServices\CrudQuizManager.cs" />
+    <Compile Include="CrudServices\CrudScore.cs" />
+    <Compile Include="CrudServices\CrudTenant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QuizProject.data\QuickQuiz.Data.csproj">
+      <Project>{5fbb7567-8be0-4e88-b675-c57465d47906}</Project>
+      <Name>QuickQuiz.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QuizProject.Domain\QuickQuiz.Domain.csproj">
+      <Project>{53227142-ead9-455b-aa5a-a7bb7d1fd13d}</Project>
+      <Name>QuickQuiz.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
