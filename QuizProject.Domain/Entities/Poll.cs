@@ -10,7 +10,7 @@ namespace QuickQuiz.Domain
    public  class Poll
     {
        [Key]public string PollId { get; set; }
-       public int QuestionsNumber { get; set; }
+       public int NbOfQuestions{ get; set; }
        public int NbOfParticipants { get; set; }
       
        public DateTime Startpoll { get; set; }
