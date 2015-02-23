@@ -24,11 +24,10 @@ namespace QuickQuiz.Data.Configuration
             HasMany(q => q.Polls).WithMany(qu => qu.Questions).Map(m =>
             {
                 m.ToTable("QuestionPoll");
-                m.MapLeftKey("Poll");
                 m.MapRightKey("Question");
+                m.MapLeftKey("Poll");
             });
 
-            //tous les champs monquent les proprietés sur les attribut dans la base de donnée
         }
     }
 }

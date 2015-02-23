@@ -12,7 +12,7 @@ namespace QuickQuiz.Data.Configuration
     {
         public PollConfiguration()
         {
-            ToTable("Poll");
+            ToTable("Polls");
             HasKey(p => p.PollId);
             HasRequired(qm => qm.QuizManager)   //one to many 
                 .WithMany(p => p.Polls)
@@ -20,13 +20,11 @@ namespace QuickQuiz.Data.Configuration
                 .WillCascadeOnDelete(false);
           
             HasMany(qu => qu.EndUsers).WithMany(p=> p.Polls).Map(m =>
-            {
-                m.ToTable("EndUserPoll");
+            {   m.ToTable("EndUserPoll");
                 m.MapLeftKey("Poll");
-                m.MapRightKey("Users");
+                m.MapRightKey("EndUser");
             });
 
-            //tous les champs monquent les proprietés sur les attribut dans la base de donnée
         }
     }
 }

@@ -15,7 +15,6 @@ namespace QuickQuiz.Data.Configuration
             ToTable("Tenants");
           
     
-            //tous les champs manquent les proprietés sur les attribut dans la base de donnée 
 
         }
     }
