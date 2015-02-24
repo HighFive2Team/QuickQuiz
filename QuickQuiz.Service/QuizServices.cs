@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace QuickQuiz.Service
 {
-    class QuizServices : IQuizServices
+   public class QuizServices : IQuizServices
     {
         DatabaseFactory dbFactory = null;
         IUnitOfWork utOfWork = null;
@@ -102,11 +102,7 @@ namespace QuickQuiz.Service
         {
             return utOfWork.QuestionRepository.GetAll();
         }
-        public void Dispose()
-        {
-            utOfWork.Dispose();
-        }
-
+ 
 
         // class quiz
         public void CreateQuiz(Quiz Q)
@@ -227,6 +223,32 @@ namespace QuickQuiz.Service
         {
             return utOfWork.TenantRepository.GetAll();
         }
+
+        public void CreateQuizManager(QuizManager QM)
+        {
+            utOfWork.QuizManagerRepository.Add(QM);
+            utOfWork.Commit();
+        }
+        public void UpdateQuizManager(QuizManager QM)
+        {
+            utOfWork.QuizManagerRepository.Update(QM);
+            utOfWork.Commit();
+        }
+        public void DeleteQuizManager(QuizManager QM)
+        {
+            utOfWork.QuizManagerRepository.Delete(QM);
+            utOfWork.Commit();
+        }
+        public QuizManager GetQuizManager(int id)
+        {
+            var Q = utOfWork.QuizManagerRepository.GetById(id);
+            return Q;
+        }
+        public IEnumerable<QuizManager> GetAllQuizManager()
+        {
+            return utOfWork.QuizManagerRepository.GetAll();
+        }
+
 
 
         public void Dispose()
