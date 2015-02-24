@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace QuickQuiz.Data.Configuration
 {
-    class QuizManagerConfiguration : EntityTypeConfiguration<QuizManager>
+    public class QuizManagerConfiguration : EntityTypeConfiguration<QuizManager>
     {
         public QuizManagerConfiguration()
         {
-            HasRequired(t => t.Tenant).WithMany(m => m.QuizManagers).HasForeignKey(t => t.TenantId).WillCascadeOnDelete(false);
+            HasRequired(t => t.Tenant).WithMany(m => m.QuizManagers).HasForeignKey(t => t.QmTenantId).WillCascadeOnDelete(false);
 
         }
     }

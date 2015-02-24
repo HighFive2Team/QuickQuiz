@@ -15,7 +15,7 @@ namespace QuickQuiz.Domain
 
 
         //foreignkey
-        public string TenantId { get; set; }
+        public string QmTenantId { get; set; }
         public virtual Tenant Tenant { get; set; } 
     }
 }
