@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>2.5</ProductVersion>
-    <ProjectGuid>517ec6f3-ecfd-4d7c-b969-a7454849c14f</ProjectGuid>
+    <ProjectGuid>11a0c3ab-a1e1-4900-a187-d9f7e982afb7</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>QuickQuiz.CS</RootNamespace>
@@ -39,7 +39,7 @@
   <ItemGroup>
     <ProjectReference Include="..\QuickQuiz.Web\QuickQuiz.Web.csproj">
       <Name>QuickQuiz.Web</Name>
-      <Project>{cf1bc748-8a9c-4c0a-b900-6616f639a0ab}</Project>
+      <Project>{11d29bb3-087a-4fbb-aa8e-feec47399ecd}</Project>
       <Private>True</Private>
       <RoleType>Web</RoleType>
       <RoleName>QuickQuiz.Web</RoleName>
@@ -47,10 +47,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Profiles" />
     <Folder Include="QuickQuiz.WebContent\" />
   </ItemGroup>
   <ItemGroup>
     <DiagnosticsConfiguration Include="QuickQuiz.WebContent\diagnostics.wadcfgx" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishProfile Include="Profiles\QuickQuizProduction.azurePubxml" />
   </ItemGroup>
   <!-- Import the target files for this project template -->
   <PropertyGroup>

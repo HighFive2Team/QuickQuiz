@@ -1,18 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
 using System.Web;
 using System.Web.Mvc;
 
-namespace QuickQuiz.Web.Controllers
+namespace QuizWebApi.Controllers
 {
-    public class QuizzesController : Controller
+    public class HomeController : Controller
     {
-        // GET: Quizzes
         public ActionResult Index()
         {
-            HttpClient client = new HttpClient();
+            ViewBag.Title = "Home Page";
 
             return View();
         }
