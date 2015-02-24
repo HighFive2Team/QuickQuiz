@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace QuickQuiz.Data
 {
-   public class UserConfiguration:EntityTypeConfiguration<User>
+   public class UserConfiguration:EntityTypeConfiguration<User> 
     {
 
        public UserConfiguration()
