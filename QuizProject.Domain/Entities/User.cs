@@ -12,11 +12,11 @@ namespace QuickQuiz.Domain
     {
         [Key]public string IdUser { get; set; }
 
-        [Required(ErrorMessage = " name required")]
+        [Required(ErrorMessage = " FirstName  is required")]
         [StringLength(25, ErrorMessage = "must be then 25 characters")]
         [MaxLength(50)]
         public string FirstName { get; set; }
-        [Required(ErrorMessage = " name required")]
+        [Required(ErrorMessage = " LastName is required")]
         [StringLength(25, ErrorMessage = "must be then 25 characters")]
         [MaxLength(50)]
         public string LastName { get; set; }

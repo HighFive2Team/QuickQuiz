@@ -11,10 +11,16 @@ namespace QuickQuiz.Domain
     {
 
        [Required(ErrorMessage = " Tenant identication required")]
+       [StringLength(25, ErrorMessage = "Must be less than 25 characters")]
+       [MaxLength(50)]
         public string TenantName { get; set; }
+       [Required(ErrorMessage = "Name of country is  Required")]
+       [StringLength(25, ErrorMessage = "Must be less than 25 characters")]
+       [MaxLength(50)]
         public string Country { get; set; }
+       [Range(0, int.MaxValue)]
         public int ZipCode { get; set; }
-   
+       [MaxLength(50)]
         public string OfferType { get; set; }
        [DataType(DataType.ImageUrl), Display(Name = "votre Logo")]
         public string Logo { get; set; }

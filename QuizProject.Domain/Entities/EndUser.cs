@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,8 +13,9 @@ namespace QuickQuiz.Domain
        public virtual ICollection<Score> Scores { get; set; }
 
 
-       //foreignkey
+      
        public string TenantId { get; set; }
+       [ForeignKey("TenantId ")]
        public virtual Tenant Tenant { get; set; } 
 
     }
