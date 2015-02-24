@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace QuickQuiz.Service.CrudServices
 {
-    class CrudPoll
+   public class CrudPoll
     {
         DatabaseFactory dbFactory = null;
         UnitOfWork unofWork = null;
@@ -37,6 +37,10 @@ namespace QuickQuiz.Service.CrudServices
         {
             var P = unofWork.PollRepository.GetById(id);
             return P;
+        }
+        public IEnumerable<Poll> GetAllPoll()
+        {
+            return unofWork.PollRepository.GetAll();
         }
         public IEnumerable<Poll> GetPollByQuizManager(string QuizManagerEmail)
         {

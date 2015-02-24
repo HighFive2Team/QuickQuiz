@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace QuickQuiz.Service.CrudServices
 {
-    class CrudTenant
+   public class CrudTenant
     {
         DatabaseFactory dbFactory = null;
         UnitOfWork unofWork = null;
@@ -37,6 +37,10 @@ namespace QuickQuiz.Service.CrudServices
         {
             var t = unofWork.TenantRepository.GetById(id);
             return t;
+        }
+       public IEnumerable<Tenant> GetAllTenant()
+        {
+            return unofWork.TenantRepository.GetAll();
         }
         public void Dispose()
         {

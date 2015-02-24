@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace QuickQuiz.Service.CrudServices
 {
-    class CrudScore
+    public class CrudScore
     {
         DatabaseFactory dbFactory = null;
         UnitOfWork unofWork = null;
@@ -37,6 +37,10 @@ namespace QuickQuiz.Service.CrudServices
         {
             var s = unofWork.ScoreRepository.GetById(id);
             return s;
+        }
+        public IEnumerable<Score> GetAllScore()
+        {
+            return unofWork.ScoreRepository.GetAll();
         }
         public IEnumerable<Score> GetScoreByQuiz(string quizId)
         {
