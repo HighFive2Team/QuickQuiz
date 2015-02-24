@@ -17,7 +17,7 @@ namespace QuiqQuiz
             app.UseWindowsAzureActiveDirectoryBearerAuthentication(
                 new WindowsAzureActiveDirectoryBearerAuthenticationOptions
                 {
-                    Tenant = ConfigurationManager.AppSettings["ida:Tenant"],
+                    Tenant = ConfigurationManager.AppSettings["/token"],
                     TokenValidationParameters = new TokenValidationParameters {
                          ValidAudience = ConfigurationManager.AppSettings["ida:Audience"]
                     },

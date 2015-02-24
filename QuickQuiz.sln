@@ -22,6 +22,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickQuiz.Web", "QuickQuiz.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quizapi", "quizapi\quizapi.csproj", "{F7906A45-1E2B-4405-9916-807A772777C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickQuizRole", "QuickQuizRole\QuickQuizRole.csproj", "{7F5FF4C8-3E52-4DB6-95DB-3C0026568003}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickQuiz.Api", "QuickQuiz.Api\QuickQuiz.Api.csproj", "{0E9F767D-FC93-49D7-BBCE-5B89A575D76D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{EE06449B-32D0-4F85-99EC-F12ADEC8E8C8}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{CAA5C7E3-672D-44D2-AB06-11ED22AE1106}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\QuickQuizApi-WAWS-dev.json = PublishScripts\Configurations\QuickQuizApi-WAWS-dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,8 +71,19 @@ Global
 		{F7906A45-1E2B-4405-9916-807A772777C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7906A45-1E2B-4405-9916-807A772777C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7906A45-1E2B-4405-9916-807A772777C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F5FF4C8-3E52-4DB6-95DB-3C0026568003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F5FF4C8-3E52-4DB6-95DB-3C0026568003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F5FF4C8-3E52-4DB6-95DB-3C0026568003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F5FF4C8-3E52-4DB6-95DB-3C0026568003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E9F767D-FC93-49D7-BBCE-5B89A575D76D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E9F767D-FC93-49D7-BBCE-5B89A575D76D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E9F767D-FC93-49D7-BBCE-5B89A575D76D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E9F767D-FC93-49D7-BBCE-5B89A575D76D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CAA5C7E3-672D-44D2-AB06-11ED22AE1106} = {EE06449B-32D0-4F85-99EC-F12ADEC8E8C8}
 	EndGlobalSection
 EndGlobal

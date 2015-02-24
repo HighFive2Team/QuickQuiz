@@ -45,12 +45,26 @@
       <RoleName>QuickQuiz.Web</RoleName>
       <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
+    <ProjectReference Include="..\QuickQuizRole\QuickQuizRole.csproj">
+      <Name>QuickQuizRole</Name>
+      <Project>{7f5ff4c8-3e52-4db6-95db-3c0026568003}</Project>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <RoleName>QuickQuizRole</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Profiles" />
     <Folder Include="QuickQuiz.WebContent\" />
+    <Folder Include="QuickQuizRoleContent\" />
   </ItemGroup>
   <ItemGroup>
     <DiagnosticsConfiguration Include="QuickQuiz.WebContent\diagnostics.wadcfgx" />
+    <DiagnosticsConfiguration Include="QuickQuizRoleContent\diagnostics.wadcfgx" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishProfile Include="Profiles\MyserviceQuizProduction.azurePubxml" />
   </ItemGroup>
   <!-- Import the target files for this project template -->
   <PropertyGroup>
