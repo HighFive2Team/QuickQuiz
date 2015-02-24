@@ -40,11 +40,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Data.Edm, Version=5.6.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -220,6 +222,10 @@
     <ProjectReference Include="..\QuickQuiz.Service\QuickQuiz.Service.csproj">
       <Project>{143dc771-d61d-4745-a97a-a164ae6b427e}</Project>
       <Name>QuickQuiz.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QuizProject.data\QuickQuiz.Data.csproj">
+      <Project>{5fbb7567-8be0-4e88-b675-c57465d47906}</Project>
+      <Name>QuickQuiz.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\QuizProject.Domain\QuickQuiz.Domain.csproj">
       <Project>{53227142-ead9-455b-aa5a-a7bb7d1fd13d}</Project>

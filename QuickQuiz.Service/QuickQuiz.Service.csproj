@@ -47,7 +47,9 @@
     <Compile Include="CrudServices\CrudQuizManager.cs" />
     <Compile Include="CrudServices\CrudScore.cs" />
     <Compile Include="CrudServices\CrudTenant.cs" />
+    <Compile Include="IQuizServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuizServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QuizProject.data\QuickQuiz.Data.csproj">

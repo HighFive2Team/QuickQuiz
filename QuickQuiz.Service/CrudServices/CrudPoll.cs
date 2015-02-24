@@ -42,9 +42,9 @@ namespace QuickQuiz.Service.CrudServices
         {
             return unofWork.PollRepository.GetAll();
         }
-        public IEnumerable<Poll> GetPollByQuizManager(string QuizManagerEmail)
+        public IEnumerable<Poll> GetPollByQuizManager(string QuizManagerId)
         {
-            return unofWork.PollRepository.GetMany(p => p.QuizManager.Email == QuizManagerEmail);
+            return unofWork.PollRepository.GetMany(p => p.QuizManager.IdUser == QuizManagerId);
         }
         public void Dispose()
         {

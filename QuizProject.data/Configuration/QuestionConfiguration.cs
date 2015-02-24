@@ -17,15 +17,15 @@ namespace QuickQuiz.Data.Configuration
             HasMany(q => q.Quizs).WithMany(qu => qu.Questions).Map(m =>
             {
                 m.ToTable("QuestionQuiz");
-                m.MapRightKey("Question");
-                m.MapLeftKey("Quiz");
+                m.MapLeftKey("Question"); 
+                m.MapRightKey("Quiz");
             });
 
             HasMany(q => q.Polls).WithMany(qu => qu.Questions).Map(m =>
             {
                 m.ToTable("QuestionPoll");
-                m.MapRightKey("Question");
-                m.MapLeftKey("Poll");
+                m.MapLeftKey("Question");
+                m.MapRightKey("Poll");
             });
 
         }
