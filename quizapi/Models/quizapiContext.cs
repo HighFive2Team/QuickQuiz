@@ -26,6 +26,8 @@ namespace quizapi.Models
         public System.Data.Entity.DbSet<QuickQuiz.Domain.Poll> Polls { get; set; }
 
         public System.Data.Entity.DbSet<QuickQuiz.Domain.Tenant> Tenants { get; set; }
+
+        public System.Data.Entity.DbSet<QuickQuiz.Domain.Admin> Admins { get; set; }
     
     }
 }

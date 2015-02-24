@@ -13,7 +13,7 @@ namespace QuickQuiz.Domain
         [Key]public string AnswerId { get; set; }
         [DataType(DataType.MultilineText)]
         public string AnswerText { get; set; }
-        [MaxLength(50)]
+   
         public bool EtatResponse { get; set; }
         [Range(0, int.MaxValue)]
         public int nbClicks { get; set; } // nombre des selections par les participants 

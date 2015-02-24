@@ -16,7 +16,7 @@ namespace QuickQuiz.Domain
         [StringLength(25, ErrorMessage = "Must be less than 25 characters")]
         [MaxLength(50)]
         public string QuizTitle { get; set; }
-        [MaxLength(50)]
+      
         public int Size { get; set; }
         //private List<Question> Questionlist { get; set; }
         [Display(Name = " Date of starting")]
