@@ -42,12 +42,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.ApplicationInsights">
       <HintPath>..\packages\Microsoft.ApplicationInsights.0.13.2-build00132\lib\net40\Microsoft.ApplicationInsights.dll</HintPath>
     </Reference>
@@ -223,7 +217,7 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="ApplicationInsights.config" />
-    <None Include="Properties\PublishProfiles\quickquizapi.pubxml" />
+    <None Include="Properties\PublishProfiles\quizapi3.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -247,20 +241,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\QuickQuiz.Service\QuickQuiz.Service.csproj">
-      <Project>{143dc771-d61d-4745-a97a-a164ae6b427e}</Project>
-      <Name>QuickQuiz.Service</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\QuizProject.data\QuickQuiz.Data.csproj">
-      <Project>{5fbb7567-8be0-4e88-b675-c57465d47906}</Project>
-      <Name>QuickQuiz.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\QuizProject.Domain\QuickQuiz.Domain.csproj">
-      <Project>{53227142-ead9-455b-aa5a-a7bb7d1fd13d}</Project>
-      <Name>QuickQuiz.Domain</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -282,14 +263,15 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>33691</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:33691/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>True</UseCustomServer>
-          <CustomServerUrl>http://quickquizapi.azurewebsites.net</CustomServerUrl>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
