@@ -7,7 +7,7 @@ using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.ActiveDirectory;
 using Owin;
 
-namespace QuiqQuiz
+namespace QuickQuiz.Api
 {
     public partial class Startup
     {
@@ -17,7 +17,7 @@ namespace QuiqQuiz
             app.UseWindowsAzureActiveDirectoryBearerAuthentication(
                 new WindowsAzureActiveDirectoryBearerAuthenticationOptions
                 {
-                    Tenant = ConfigurationManager.AppSettings["/token"],
+                    Tenant = ConfigurationManager.AppSettings["ida:Tenant"],
                     TokenValidationParameters = new TokenValidationParameters {
                          ValidAudience = ConfigurationManager.AppSettings["ida:Audience"]
                     },

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("QuickQuiz.Web")]
+[assembly: AssemblyTitle("QuickQuiz.Api")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("QuickQuiz.Web")]
+[assembly: AssemblyProduct("QuickQuiz.Api")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("1c3ace60-2c83-4324-80fe-57e1492f5c57")]
+[assembly: Guid("c845d2d4-61a2-4096-9a9d-649e2a585fc0")]
 
 // Version information for an assembly consists of the following four values:
 //
