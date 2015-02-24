@@ -22,7 +22,8 @@ namespace QuickQuiz.Domain
        [DataType(DataType.DateTime)]
        public DateTime Finishpoll { get; set; }
        public string QuizManagerId { get; set; }
-       [ForeignKey("CategoryId ")]
+
+      [ForeignKey("QuizManagerId")]
        public virtual QuizManager QuizManager { get; set; }
 
        public virtual ICollection<EndUser> EndUsers { get; set; }
