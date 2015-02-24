@@ -39,7 +39,7 @@ namespace QuickQuiz.Data.Infrastructure
            
        }
 
-       internal void SaveChanges()
+       internal  void SaveChanges()
        {
            throw new NotImplementedException();
        }

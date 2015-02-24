@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>QuickQuiz.Data</RootNamespace>
-    <AssemblyName>QuizProject.data</AssemblyName>
+    <AssemblyName>QuickQuiz.Data</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -54,7 +54,6 @@
     <Compile Include="Configuration\QuizManagerConfiguration.cs" />
     <Compile Include="Configuration\ScoreConfiguration.cs" />
     <Compile Include="Configuration\TenantConfiguration.cs" />
-    <Compile Include="Infrastructure\AnswerRepository.cs" />
     <Compile Include="Infrastructure\DatabaseFactory.cs" />
     <Compile Include="Infrastructure\Disposable.cs" />
     <Compile Include="Infrastructure\IDatabaseFactory.cs" />
@@ -68,6 +67,10 @@
     <Compile Include="Migrations\201502231909586_mig2.cs" />
     <Compile Include="Migrations\201502231909586_mig2.Designer.cs">
       <DependentUpon>201502231909586_mig2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502240408201_mig4.cs" />
+    <Compile Include="Migrations\201502240408201_mig4.Designer.cs">
+      <DependentUpon>201502240408201_mig4.cs</DependentUpon>
     </Compile>
     <Compile Include="QuizContext.cs" />
     <Compile Include="Infrastructure\RepositoryBase.cs" />
@@ -104,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201502231909586_mig2.resx">
       <DependentUpon>201502231909586_mig2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502240408201_mig4.resx">
+      <DependentUpon>201502240408201_mig4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

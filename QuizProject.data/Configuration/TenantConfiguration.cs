@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace QuickQuiz.Data.Configuration
 {
-    class TenantConfiguration:EntityTypeConfiguration<Tenant>
+    public class TenantConfiguration:EntityTypeConfiguration<Tenant>
     {
         public TenantConfiguration()
         {
