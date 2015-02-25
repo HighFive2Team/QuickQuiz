@@ -23,7 +23,7 @@ namespace QuickQuiz.Service.CrudServices
             unofWork.AnswerRepository.Add(A);
             unofWork.Commit();
         }
-        public void UpdateQuiz(Answer A)
+        public void UpdateAnswer(Answer A)
         {
             unofWork.AnswerRepository.Update(A);
             unofWork.Commit();
@@ -33,7 +33,7 @@ namespace QuickQuiz.Service.CrudServices
             unofWork.AnswerRepository.Delete(A);
             unofWork.Commit();
         }
-        public Answer GetQuiz(int id)
+        public Answer GetAnswer(int id)
         {
             var A = unofWork.AnswerRepository.GetById(id);
             return A;

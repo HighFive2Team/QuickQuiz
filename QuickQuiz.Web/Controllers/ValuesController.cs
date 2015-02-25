@@ -8,7 +8,7 @@ using System.Web.Http;
 namespace QuickQuiz.Web.Controllers
 {
     [Authorize]
-    public class ValuesController : ApiController
+    public class ValuesController 
     {
         // GET api/values
         public IEnumerable<string> Get()
