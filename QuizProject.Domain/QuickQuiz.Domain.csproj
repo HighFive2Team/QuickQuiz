@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\Poll.cs" />
+    <Compile Include="Entities\QuizUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entities\Question.cs" />
     <Compile Include="Entities\Quiz.cs" />

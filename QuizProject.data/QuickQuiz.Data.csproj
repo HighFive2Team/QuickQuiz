@@ -48,12 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\QuizManagerConfiguration.cs" />
     <Compile Include="Configuration\EndUserConfiguration.cs" />
     <Compile Include="Configuration\PollConfiguration.cs" />
     <Compile Include="Configuration\QuestionConfiguration.cs" />
     <Compile Include="Configuration\QuizConfiguration.cs" />
     <Compile Include="Configuration\AnswerConfiguration.cs" />
-    <Compile Include="Configuration\QuizManagerConfiguration.cs" />
     <Compile Include="Configuration\ScoreConfiguration.cs" />
     <Compile Include="Configuration\TenantConfiguration.cs" />
     <Compile Include="Infrastructure\DatabaseFactory.cs" />
@@ -62,21 +62,9 @@
     <Compile Include="Infrastructure\IRepository.cs" />
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
-    <Compile Include="Migrations\201502231847341_migration1.cs" />
-    <Compile Include="Migrations\201502231847341_migration1.Designer.cs">
-      <DependentUpon>201502231847341_migration1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201502231909586_mig2.cs" />
-    <Compile Include="Migrations\201502231909586_mig2.Designer.cs">
-      <DependentUpon>201502231909586_mig2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201502240408201_mig4.cs" />
-    <Compile Include="Migrations\201502240408201_mig4.Designer.cs">
-      <DependentUpon>201502240408201_mig4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201502240427187_mig5.cs" />
-    <Compile Include="Migrations\201502240427187_mig5.Designer.cs">
-      <DependentUpon>201502240427187_mig5.cs</DependentUpon>
+    <Compile Include="Migrations\201502250332520_migx.cs" />
+    <Compile Include="Migrations\201502250332520_migx.Designer.cs">
+      <DependentUpon>201502250332520_migx.cs</DependentUpon>
     </Compile>
     <Compile Include="QuizContext.cs" />
     <Compile Include="Infrastructure\RepositoryBase.cs" />
@@ -98,7 +86,9 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -108,17 +98,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201502231847341_migration1.resx">
-      <DependentUpon>201502231847341_migration1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201502231909586_mig2.resx">
-      <DependentUpon>201502231909586_mig2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201502240408201_mig4.resx">
-      <DependentUpon>201502240408201_mig4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201502240427187_mig5.resx">
-      <DependentUpon>201502240427187_mig5.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201502250332520_migx.resx">
+      <DependentUpon>201502250332520_migx.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

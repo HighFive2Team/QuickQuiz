@@ -30,6 +30,7 @@ namespace QuickQuiz.Data
               p.Requires("isUser").HasValue(2);
 
           });
+         
           
 
            
