@@ -11,7 +11,7 @@ namespace QuizWebApi.Controllers
 {
     public class TenantController : ApiController
     {
-        // GET: api/Tenant
+        // GET: api/Tenants
         public IEnumerable<Tenant> GetAllTenant()
         {
             CrudTenant CT = new CrudTenant();

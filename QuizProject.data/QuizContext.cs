@@ -12,7 +12,7 @@ namespace QuickQuiz.Data.Infrastructure
    public class QuizContext: DbContext  
     {
        public QuizContext()
-           : base("Name=QuizWebAPI_db")
+           : base("Name=QuickQuiz_db")
        {
 
        }

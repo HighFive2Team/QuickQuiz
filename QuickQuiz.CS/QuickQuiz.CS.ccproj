@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>2.5</ProductVersion>
-    <ProjectGuid>d400798a-7b91-4692-80ce-1dcd6184f551</ProjectGuid>
+    <ProjectGuid>255dcb53-1644-4ff1-9449-8496d023734e</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>QuickQuiz.CS</RootNamespace>
@@ -37,20 +37,24 @@
     <ServiceConfiguration Include="ServiceConfiguration.Cloud.cscfg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\QuickQuiz.Web\QuickQuiz.Web.csproj">
-      <Name>QuickQuiz.Web</Name>
-      <Project>{7a7b39ab-9686-485a-a37b-fa070a0d4e10}</Project>
+    <ProjectReference Include="..\Quiz.WebRole\Quiz.WebRole.csproj">
+      <Name>Quiz.WebRole</Name>
+      <Project>{e7adbfdd-4ef7-469d-a903-1f247f441605}</Project>
       <Private>True</Private>
       <RoleType>Web</RoleType>
-      <RoleName>QuickQuiz.Web</RoleName>
+      <RoleName>Quiz.WebRole</RoleName>
       <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="QuickQuiz.WebContent\" />
+    <Folder Include="Profiles" />
+    <Folder Include="Quiz.WebRoleContent\" />
   </ItemGroup>
   <ItemGroup>
-    <DiagnosticsConfiguration Include="QuickQuiz.WebContent\diagnostics.wadcfgx" />
+    <DiagnosticsConfiguration Include="Quiz.WebRoleContent\diagnostics.wadcfgx" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishProfile Include="Profiles\quickquizProduction.azurePubxml" />
   </ItemGroup>
   <!-- Import the target files for this project template -->
   <PropertyGroup>
