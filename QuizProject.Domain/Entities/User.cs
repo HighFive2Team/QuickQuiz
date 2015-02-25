@@ -13,7 +13,7 @@ namespace QuickQuiz.Domain
         [Key]public string IdUser { get; set; }
 
         [Required(ErrorMessage = " FirstName  is required")]
-        [StringLength(25, ErrorMessage = "must be then 25 characters")]
+        [StringLength(25, ErrorMessage = "must be less than 25 characters")]
         [MaxLength(50)]
         public string FirstName { get; set; }
         [Required(ErrorMessage = " LastName is required")]

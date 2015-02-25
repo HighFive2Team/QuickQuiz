@@ -7,13 +7,13 @@ namespace QuickQuiz.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.2-31219")]
-    public sealed partial class migration1 : IMigrationMetadata
+    public sealed partial class migx : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(migration1));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(migx));
         
         string IMigrationMetadata.Id
         {
-            get { return "201502231847341_migration1"; }
+            get { return "201502250332520_migx"; }
         }
         
         string IMigrationMetadata.Source
