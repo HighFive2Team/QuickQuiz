@@ -25,7 +25,7 @@ namespace QuickQuiz.Service
             utOfWork.AnswerRepository.Add(A);
             utOfWork.Commit();
         }
-        public void UpdateQuiz(Answer A)
+        public void UpdateAnswer(Answer A)
         {
             utOfWork.AnswerRepository.Update(A);
             utOfWork.Commit();
@@ -35,12 +35,12 @@ namespace QuickQuiz.Service
             utOfWork.AnswerRepository.Delete(A);
             utOfWork.Commit();
         }
-        public Answer GetAnswer(String Answerid)
+        public Answer GetAnswer(string Answerid)
         {
             var A = utOfWork.AnswerRepository.GetById(Answerid);
             return A;
         }
-        public IEnumerable<Answer> GetAllAnswer()
+        public IEnumerable<Answer> GetAllAnswers()
         {
             return utOfWork.AnswerRepository.GetAll();
         }
@@ -66,12 +66,12 @@ namespace QuickQuiz.Service
             utOfWork.EndUserRepository.Delete(E);
             utOfWork.Commit();
         }
-        public EndUser GetEndUser(int id)
+        public EndUser GetEndUser(string id)
         {
             var E = utOfWork.EndUserRepository.GetById(id);
             return E;
         }
-        public IEnumerable<EndUser> GetAllEndUser()
+        public IEnumerable<EndUser> GetAllEndUsers()
         {
             return utOfWork.EndUserRepository.GetAll();
         }
@@ -93,12 +93,12 @@ namespace QuickQuiz.Service
             utOfWork.QuestionRepository.Delete(Q);
             utOfWork.Commit();
         }
-        public Question GetQuestion(int id)
+        public Question GetQuestion(string id)
         {
             var q = utOfWork.QuestionRepository.GetById(id);
             return q;
         }
-        public IEnumerable<Question> GetAllQuestion()
+        public IEnumerable<Question> GetAllQuestions()
         {
             return utOfWork.QuestionRepository.GetAll();
         }
@@ -120,12 +120,12 @@ namespace QuickQuiz.Service
             utOfWork.QuizRepository.Delete(Q);
             utOfWork.Commit();
         }
-        public Quiz GetQuiz(int id)
+        public Quiz GetQuiz(string id)
         {
             var Q = utOfWork.QuizRepository.GetById(id);
             return Q;
         }
-        public IEnumerable<Quiz> GetAllQuiz()
+        public IEnumerable<Quiz> GetAllQuizzes()
         {
             return utOfWork.QuizRepository.GetAll();
         }
@@ -150,12 +150,12 @@ namespace QuickQuiz.Service
             utOfWork.PollRepository.Delete(P);
             utOfWork.Commit();
         }
-        public Poll GetPoll(int id)
+        public Poll GetPoll(string id)
         {
             var P = utOfWork.PollRepository.GetById(id);
             return P;
         }
-        public IEnumerable<Poll> GetAllPoll()
+        public IEnumerable<Poll> GetAllPolls()
         {
             return utOfWork.PollRepository.GetAll();
         }
@@ -180,15 +180,16 @@ namespace QuickQuiz.Service
             utOfWork.ScoreRepository.Delete(S);
             utOfWork.Commit();
         }
-        public Score GetScore(int id)
+        public Score GetScore(string id)
         {
             var s = utOfWork.ScoreRepository.GetById(id);
             return s;
         }
-        public IEnumerable<Score> GetAllScore()
+        public IEnumerable<Score> GetAllScores()
         {
             return utOfWork.ScoreRepository.GetAll();
         }
+
         public IEnumerable<Score> GetScoreByQuiz(string quizId)
         {
             return utOfWork.ScoreRepository.GetMany(s => s.Quiz.IdQuiz == quizId);
@@ -214,12 +215,12 @@ namespace QuickQuiz.Service
             utOfWork.TenantRepository.Delete(t);
             utOfWork.Commit();
         }
-        public Tenant GetTenant(int id)
+        public Tenant GetTenant(string id)
         {
             var t = utOfWork.TenantRepository.GetById(id);
             return t;
         }
-        public IEnumerable<Tenant> GetAllTenant()
+        public IEnumerable<Tenant> GetAllTenants()
         {
             return utOfWork.TenantRepository.GetAll();
         }
@@ -239,12 +240,12 @@ namespace QuickQuiz.Service
             utOfWork.QuizManagerRepository.Delete(QM);
             utOfWork.Commit();
         }
-        public QuizManager GetQuizManager(int id)
+        public QuizManager GetQuizManager(string id)
         {
             var Q = utOfWork.QuizManagerRepository.GetById(id);
             return Q;
         }
-        public IEnumerable<QuizManager> GetAllQuizManager()
+        public IEnumerable<QuizManager> GetAllQuizManagers()
         {
             return utOfWork.QuizManagerRepository.GetAll();
         }

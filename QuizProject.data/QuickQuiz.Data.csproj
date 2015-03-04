@@ -62,9 +62,9 @@
     <Compile Include="Infrastructure\IRepository.cs" />
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
-    <Compile Include="Migrations\201502250332520_migx.cs" />
-    <Compile Include="Migrations\201502250332520_migx.Designer.cs">
-      <DependentUpon>201502250332520_migx.cs</DependentUpon>
+    <Compile Include="Migrations\201503040319317_mig11.cs" />
+    <Compile Include="Migrations\201503040319317_mig11.Designer.cs">
+      <DependentUpon>201503040319317_mig11.cs</DependentUpon>
     </Compile>
     <Compile Include="QuizContext.cs" />
     <Compile Include="Infrastructure\RepositoryBase.cs" />
@@ -98,8 +98,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201502250332520_migx.resx">
-      <DependentUpon>201502250332520_migx.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201503040319317_mig11.resx">
+      <DependentUpon>201503040319317_mig11.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

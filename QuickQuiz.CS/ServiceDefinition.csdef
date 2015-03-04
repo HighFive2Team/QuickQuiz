@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ServiceDefinition name="QuickQuiz.CS" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2014-06.2.4">
-  <WebRole name="Quiz.WebRole" vmsize="Small">
+  <WebRole name="QuickQuiz.WebRole" vmsize="Small">
     <Sites>
       <Site name="Web">
         <Bindings>

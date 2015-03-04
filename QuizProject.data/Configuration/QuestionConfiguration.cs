@@ -19,6 +19,8 @@ namespace QuickQuiz.Data.Configuration
                 m.ToTable("QuestionQuiz");
                 m.MapLeftKey("Question"); 
                 m.MapRightKey("Quiz");
+                
+
             });
 
             HasMany(q => q.Polls).WithMany(qu => qu.Questions).Map(m =>
