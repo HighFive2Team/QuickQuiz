@@ -16,15 +16,25 @@ namespace QuickQuiz.Domain
        [StringLength(25, ErrorMessage = "Must be less than 25 characters")]
        [MaxLength(50)]
        public string Questiontype{get;set;}
-       [DataType(DataType.Url), Display(Name = "Schema title")]
+
+       [DataType(DataType.Upload), Display(Name = "Schema title")]
        public string Video { get; set; }
-        [DataType(DataType.ImageUrl), Display(Name = "Schema title")]
+
+        [DataType(DataType.Upload), Display(Name = "Schema title")]
        public string Image { get; set; }
 
 
        public virtual ICollection<Answer> Answers { get; set; }
-       public virtual ICollection<Quiz> Quizs { get; set; }
-       public virtual ICollection<Poll> Polls { get; set; }
+
+       public string QuizId { get; set; }
+
+
+       public virtual Quiz quiz { get; set; }
+
+
+       public string PollId { get; set; }
+
+       public virtual Poll poll { get; set; }
 
        
     }

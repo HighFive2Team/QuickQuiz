@@ -12,7 +12,7 @@ namespace QuizWebApi.Controllers
     public class EndUsersController : ApiController
     {
         QuizServices qs = new QuizServices();
-        // GET: api/EndUsers
+        // GET: api/EndUsers    
         public IEnumerable<EndUser> GetEndUsers()
         {
             return qs.GetAllEndUsers();
@@ -25,17 +25,18 @@ namespace QuizWebApi.Controllers
         }
 
         // POST: api/EndUsers
+        [HttpPost]
         public void Post(EndUser eu)
         {
             qs.CreateEndUser(eu);
         }
-
+        [HttpPut]
         // PUT: api/EndUsers/5
         public void Put(EndUser eu)
         {
             qs.CreateEndUser(eu);
         }
-
+        [HttpDelete]
         // DELETE: api/EndUsers/5
         public void Delete(EndUser eu)
         {

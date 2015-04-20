@@ -25,18 +25,21 @@ namespace QuizWebApi.Controllers
         }
 
         // POST: api/Questions
+        [HttpPost]
         public void Post(Question qu)
         {
             qs.CreateQuestion(qu);
         }
 
         // PUT: api/Questions/5
+        [HttpPut]
         public void Put(Question qu)
         {
             qs.UpdateQuestion(qu);
         }
 
         // DELETE: api/Questions/5
+        [HttpDelete]
         public void Delete(Question qu)
         {
             qs.UpdateQuestion(qu);

@@ -14,10 +14,12 @@ namespace QuickQuiz.Data.Configuration
         {
             ToTable("Polls");
             HasKey(p => p.PollId);
-            HasRequired(qm => qm.QuizManager)   //one to many 
+            HasOptional(qm => qm.QuizManager)   //one to many 
                 .WithMany(p => p.Polls)
                 .HasForeignKey(qm => qm.QuizManagerId)
                 .WillCascadeOnDelete(false);
+                
+                
           
             HasMany(qu => qu.EndUsers).WithMany(p=> p.Polls).Map(m =>
             {   m.ToTable("EndUserPoll");

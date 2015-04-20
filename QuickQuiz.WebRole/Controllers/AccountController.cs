@@ -13,6 +13,7 @@ using QuickQuiz.WebRole.Models;
 
 namespace QuickQuiz.WebRole.Controllers
 {
+    [Authorize]
     public class AccountController : Controller
     {
         public ActionResult SignOut()

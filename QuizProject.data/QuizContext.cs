@@ -6,6 +6,9 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
+using System.Data.Entity.Validation;
+
 
 namespace QuickQuiz.Data.Infrastructure
 {
@@ -14,8 +17,8 @@ namespace QuickQuiz.Data.Infrastructure
        public QuizContext()
            : base("Name=QuickQuiz_db")
        {
-
-       }
+                       this.Configuration.LazyLoadingEnabled = false;
+                  }
 
        public DbSet<User> Users { get; set; }
        public DbSet<Tenant> Tenants { get; set; }
@@ -39,9 +42,27 @@ namespace QuickQuiz.Data.Infrastructure
            
        }
 
-       internal  void SaveChanges()
+       public  override int SaveChanges()
        {
-           throw new NotImplementedException();
+           try
+           {
+               return base.SaveChanges();
+           }
+           catch (DbEntityValidationException dbEx)
+           {
+               foreach (var validationErrors in dbEx.EntityValidationErrors)
+               {
+                   foreach (var validationError in validationErrors.ValidationErrors)
+                   {
+                       Trace.TraceInformation("Class: {0}, Property: {1}, Error: {2}",
+                           validationErrors.Entry.Entity.GetType().FullName,
+                           validationError.PropertyName,
+                           validationError.ErrorMessage);
+                   }
+               }
+
+               throw;
+           }
        }
     }
 }

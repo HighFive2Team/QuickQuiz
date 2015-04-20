@@ -18,6 +18,7 @@ namespace QuickQuiz.Domain
         [StringLength(25, ErrorMessage = "must be less than 25 characters")]
         [MaxLength(50)]
         public string FirstName { get; set; }
+
         [Required(ErrorMessage = " LastName is required")]
         [StringLength(25, ErrorMessage = "must be then 25 characters")]
         [MaxLength(50)]

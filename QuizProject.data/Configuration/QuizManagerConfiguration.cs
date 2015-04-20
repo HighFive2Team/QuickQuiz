@@ -16,7 +16,7 @@ namespace QuickQuiz.Data.Configuration
                 
                 .WithMany(m => m.QuizManagers)
                 .HasForeignKey(t => t.QmTenantId)
-                .WillCascadeOnDelete(false);
+                .WillCascadeOnDelete(true);
 
         }
     }

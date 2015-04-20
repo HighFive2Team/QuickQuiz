@@ -13,11 +13,15 @@ namespace QuickQuiz.Domain
         public string ScoreId { get; set; }
 
 
+        public string EndUserId { get; set; }
         public virtual EndUser EndUser { get; set; }
+
+        public string QuizId { get; set; }
+
+
         public virtual Quiz Quiz { get; set; }
 
-        public string EndUserId { get; set; }
-        public string QuizId { get; set; }
+       
 
         public int ScoreResult { get; set; }
 

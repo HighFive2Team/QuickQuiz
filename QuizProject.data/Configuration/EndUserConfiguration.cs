@@ -12,7 +12,10 @@ namespace QuickQuiz.Data.Configuration
     {
         public EndUserConfiguration()
         {
-            HasOptional(t => t.Tenant).WithMany(e => e.EndUsers).HasForeignKey(t => t.TenantId).WillCascadeOnDelete(false);
+            HasOptional(t => t.Tenant)
+                .WithMany(e => e.EndUsers)
+                .HasForeignKey(t => t.TenantId)
+                .WillCascadeOnDelete(false);
 
         }
     }

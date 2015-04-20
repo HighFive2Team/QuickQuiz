@@ -13,22 +13,17 @@ namespace QuickQuiz.Data.Configuration
         public QuestionConfiguration()
         {
             ToTable("Questions");
+
             HasKey(q => q.questionId);
-            HasMany(q => q.Quizs).WithMany(qu => qu.Questions).Map(m =>
-            {
-                m.ToTable("QuestionQuiz");
-                m.MapLeftKey("Question"); 
-                m.MapRightKey("Quiz");
-                
+            HasOptional(q => q.quiz)
+                .WithMany(qu => qu.Questions)
+                .HasForeignKey(q =>  q.QuizId) 
+                .WillCascadeOnDelete(true);
 
-            });
-
-            HasMany(q => q.Polls).WithMany(qu => qu.Questions).Map(m =>
-            {
-                m.ToTable("QuestionPoll");
-                m.MapLeftKey("Question");
-                m.MapRightKey("Poll");
-            });
+            HasOptional(q => q.poll)
+                .WithMany(qu => qu.Questions)
+                .HasForeignKey(q => q.PollId)
+                .WillCascadeOnDelete(true);
 
         }
     }

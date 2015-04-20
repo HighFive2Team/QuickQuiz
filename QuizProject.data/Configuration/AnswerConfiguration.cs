@@ -14,7 +14,10 @@ namespace QuickQuiz.Data.Configuration
         {
             ToTable("Answers");
             HasKey(r => r.AnswerId);
-            HasRequired(qu => qu.Question).WithMany(A =>A.Answers).HasForeignKey(A=>A.QuestionId).WillCascadeOnDelete(false);
+            HasRequired(qu => qu.Question)
+                .WithMany(A =>A.Answers)
+                .HasForeignKey(A=>A.QuestionId)
+                .WillCascadeOnDelete(true);
 
             //tous les champs monquent les proprietés sur les attribut dans la base de donnée
         }

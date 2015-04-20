@@ -23,18 +23,28 @@ namespace QuizWebApi.Controllers
             return qs.GetAnswer(id);
         }
 
+
+
         // POST: api/Answers
+        [HttpPost]
         public void Post(Answer a)
         {
-            qs.CreateAnswer(a);
+            if (ModelState.IsValid)
+            {
+                qs.CreateAnswer(a);
+            }
+         
         }
 
+
+        [HttpPut]
         // PUT: api/Answers/5
         public void Put(Answer a)
         {
             qs.UpdateAnswer(a);
         }
 
+        [HttpDelete]
         // DELETE: api/Answers/5
         public void Delete(Answer a)
         {

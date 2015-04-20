@@ -129,9 +129,10 @@ namespace QuickQuiz.Service
         {
             return utOfWork.QuizRepository.GetAll();
         }
-        public IEnumerable<Quiz> GetQuizByQuizManager(string QuizManagerEmail)
+        public IEnumerable<Quiz> GetQuizByQuizManager(string mail)
         {
-            return utOfWork.QuizRepository.GetMany(q => q.QuizManager.Email == QuizManagerEmail);
+
+            return utOfWork.QuizRepository.GetMany(q => q.QuizManager.Email == mail);
         }
 
         //class poll
@@ -245,6 +246,9 @@ namespace QuickQuiz.Service
             var Q = utOfWork.QuizManagerRepository.GetById(id);
             return Q;
         }
+
+       
+
         public IEnumerable<QuizManager> GetAllQuizManagers()
         {
             return utOfWork.QuizManagerRepository.GetAll();

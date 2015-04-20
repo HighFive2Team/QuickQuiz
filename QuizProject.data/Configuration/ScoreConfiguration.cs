@@ -19,13 +19,13 @@ namespace QuickQuiz.Data.Configuration
             HasRequired(s=>s.EndUser)
                 .WithMany(u => u.Scores)
                 .HasForeignKey(s =>s.EndUserId)
-                .WillCascadeOnDelete(false);
+                .WillCascadeOnDelete(true);
             
             
             HasRequired(s => s.Quiz)
                 .WithMany(u => u.Scores)
                 .HasForeignKey(s => s.QuizId)
-                .WillCascadeOnDelete(false);
+                .WillCascadeOnDelete(true);
            
 
             //tous les champs monquent les proprietés sur les attribut dans la base de donnée
